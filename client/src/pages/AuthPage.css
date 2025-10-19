@@ -1,0 +1,77 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 1.5rem;
+}
+
+.auth-card {
+  width: min(520px, 100%);
+  padding: 2.75rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  gap: 2rem;
+}
+
+.auth-toggle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  padding: 0.3rem;
+}
+
+.auth-toggle button {
+  border: none;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-toggle button.active {
+  background: linear-gradient(135deg, #ef709b, #fa9372);
+  color: white;
+  box-shadow: 0 12px 24px rgba(239, 112, 155, 0.28);
+}
+
+.auth-card form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.auth-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: rgba(18, 18, 20, 0.7);
+}
+
+.auth-card input,
+.auth-card select,
+.auth-card textarea {
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(18, 18, 20, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.salon-extra {
+  display: grid;
+  gap: 1rem;
+}
+
+.auth-message {
+  margin: 0;
+  text-align: center;
+  color: #c0392b;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 2.2rem 1.5rem;
+  }
+}

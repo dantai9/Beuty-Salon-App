@@ -1,0 +1,43 @@
+.search-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  padding: 1.5rem;
+  margin: 3rem auto;
+  max-width: min(1000px, 92vw);
+  align-items: end;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  box-shadow: 0 24px 55px rgba(13, 13, 16, 0.18);
+}
+
+.search-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-weight: 600;
+  color: rgba(18, 18, 20, 0.7);
+}
+
+.search-filters input {
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(18, 18, 20, 0.12);
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+.search-filters.compact {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+}
+
+.search-filters.compact .gradient-button {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .search-filters {
+    grid-template-columns: 1fr;
+  }
+}

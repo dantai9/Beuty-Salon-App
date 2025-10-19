@@ -1,0 +1,117 @@
+.salon-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: min(1100px, 92vw);
+  margin: 0 auto 4rem;
+}
+
+.salon-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1.2fr;
+  gap: 2rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.salon-hero img {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.salon-info h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.salon-info .location {
+  color: rgba(18, 18, 20, 0.6);
+  margin: 0.75rem 0;
+  font-weight: 500;
+}
+
+.salon-info .description {
+  color: rgba(18, 18, 20, 0.7);
+  line-height: 1.7;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.chips span {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: rgba(239, 112, 155, 0.15);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.salon-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.salon-services-panel,
+.reviews-panel {
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.salon-services-panel h2,
+.reviews-panel h2 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  color: rgba(18, 18, 20, 0.9);
+}
+
+.salon-services-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.salon-services-panel li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  color: rgba(18, 18, 20, 0.75);
+}
+
+.salon-services-panel li strong {
+  display: block;
+  color: rgba(18, 18, 20, 0.9);
+}
+
+.login-notice {
+  margin: 2rem 0 0;
+  color: rgba(18, 18, 20, 0.6);
+  font-weight: 500;
+}
+
+.feedback {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .salon-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .salon-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,28 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.home-search {
+  max-width: min(900px, 92vw);
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.home-search p {
+  margin: 0 auto;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.salon-grid {
+  max-width: min(1100px, 92vw);
+  margin: 0 auto 2rem;
+}
+
+.salon-grid .grid {
+  display: grid;
+  gap: 2rem;
+}

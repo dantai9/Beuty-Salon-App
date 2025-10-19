@@ -1,0 +1,91 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: min(1100px, 92vw);
+  margin: 0 auto 4rem;
+}
+
+.dashboard-hero {
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-hero h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.dashboard-hero p {
+  margin: 1.5rem 0 0;
+  max-width: 520px;
+  color: rgba(18, 18, 20, 0.7);
+  line-height: 1.7;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboard-table {
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-x: auto;
+}
+
+.dashboard-table h2 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(18, 18, 20, 0.08);
+  color: rgba(18, 18, 20, 0.75);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.status-pill.pending {
+  background: rgba(255, 193, 7, 0.18);
+  color: #b05d00;
+}
+
+.status-pill.confirmed {
+  background: rgba(46, 204, 113, 0.18);
+  color: #1f8b4d;
+}
+
+.status-pill.completed {
+  background: rgba(46, 134, 193, 0.2);
+  color: #1f6391;
+}
+
+.status-pill.cancelled {
+  background: rgba(231, 76, 60, 0.18);
+  color: #9c2f21;
+}
+
+.empty {
+  text-align: center;
+  color: rgba(18, 18, 20, 0.55);
+}

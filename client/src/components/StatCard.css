@@ -1,0 +1,51 @@
+.stat-card {
+  padding: 1.75rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(216, 87, 168, 0.12), rgba(240, 157, 108, 0.1));
+  pointer-events: none;
+}
+
+.stat-card h4 {
+  margin: 0;
+  color: rgba(18, 18, 20, 0.6);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.stat-card .value {
+  margin: 1rem 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.stat-card .caption {
+  margin: 0.5rem 0 0;
+  color: rgba(18, 18, 20, 0.55);
+  font-size: 0.9rem;
+}
+
+.trend {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.trend.up {
+  color: #1f9254;
+}
+
+.trend.down {
+  color: #c0392b;
+}

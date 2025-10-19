@@ -1,0 +1,40 @@
+.footer {
+  max-width: min(1100px, 90vw);
+  margin: 4rem auto 2rem;
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  color: var(--primary);
+}
+
+.footer p {
+  margin: 0;
+  color: rgba(18, 18, 20, 0.65);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: rgba(18, 18, 20, 0.7);
+  font-weight: 500;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(18, 18, 20, 0.5);
+}
