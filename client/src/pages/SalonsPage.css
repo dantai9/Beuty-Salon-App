@@ -1,0 +1,32 @@
+.salons-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: min(1100px, 92vw);
+  margin: 0 auto 4rem;
+}
+
+.salons-hero {
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.salons-hero h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  color: rgba(18, 18, 20, 0.92);
+}
+
+.salons-hero p {
+  margin: 1.5rem auto 0;
+  max-width: 580px;
+  color: rgba(18, 18, 20, 0.7);
+  line-height: 1.7;
+}
+
+.salons-grid {
+  display: grid;
+  gap: 2rem;
+}

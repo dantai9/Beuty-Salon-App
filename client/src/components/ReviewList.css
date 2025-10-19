@@ -1,0 +1,50 @@
+.review-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 45px rgba(13, 13, 16, 0.18);
+}
+
+.review-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.review-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.review-card .rating {
+  background: rgba(239, 112, 155, 0.18);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.review-card p {
+  margin: 1rem 0;
+  color: rgba(18, 18, 20, 0.7);
+  line-height: 1.6;
+}
+
+.review-card footer {
+  display: flex;
+  gap: 1rem;
+  color: rgba(18, 18, 20, 0.55);
+  font-size: 0.8rem;
+}
+
+.empty {
+  text-align: center;
+  color: rgba(18, 18, 20, 0.55);
+  padding: 2rem 0;
+}
